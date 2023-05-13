@@ -17,6 +17,10 @@
 - `generateDataset.py` : pyhton script which takes the clean comments file and produces a dataset ready for Sentiment Analysis tasks
 - `commentsDatasetLarge.csv` : A csv file, which is the result of the output of the execution of `generateDataset.py`
 - `gatherData.sh` : Shell script that automates the process of collecting data, cleaning the data and creating a dataset out of it
+- `processed_dataset.pkl` : Cleaned and preprocessed dataset
+- `best_models` : directory containing saved LSTM and CNN models
+- `Lstm.ipynb` : Fully executed notebook for LSTM models
+- `CNN.ipynb` : Fully executed notebook for CNN models
 
 ## Flow of operations
 The below diagram aims to explain the sequence of operations that take place when this application is run to perform Sentiment Analysis
