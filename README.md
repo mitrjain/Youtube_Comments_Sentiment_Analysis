@@ -21,18 +21,34 @@
 ## Flow of operations
 The below diagram aims to explain the sequence of operations that take place when this application is run to perform Sentiment Analysis
 
-### Running the mysql-python-client
+![CS271_ Flow of operations](https://github.com/mitrjain/Youtube_Comments_Sentiment_Analysis/assets/26086412/2e761eaa-9512-409d-a535-fa29a131cde4)
+
+## Running the application
 Steps to run this application
 - Make sure you have the required python packages mentioned in above sections
 - Set up envornment varaibles file `.env` in the root (current) directory
 ```
 API_KEY=""
 ```
-- Execute the following command
+- Phase 1: Execute the following command to get yotube comments, preprocess it and generate a dataset out of it: 
 
-### Environment specifications
-Following are the specifications of the environment on which this application was last executed/tested: 
+`gatherData.sh`
+
+- Phase 2: Execute the Lstm.ipynb notebook
+- Phase 3: Execute the CNN.ipynb notebook
+
+## Environment specifications
+
+### Phase 1
+Following are the specifications of the environment on which this part of application was executed/tested:
 - MacBook Air M1
 - OS: Montery
 - Memory: 16 GB
 - Python version: 3.9.13
+
+### Phase 2
+Following are the specifications of the environment on which this part of application was executed/tested:
+- Google Colab Notebook
+- Connected to a custom GCP VM:
+- - System RAM: 102.2 GB
+- - Disk: 186.0 GB
