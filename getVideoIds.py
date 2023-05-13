@@ -4,6 +4,10 @@ import os
 import googleapiclient.discovery
 import googleapiclient.errors
 
+from dotenv import load_dotenv
+
+load_dotenv()
+apiKey = os.environ.get("API_KEY")
 
 regions = ["US","GB"]
 
@@ -14,7 +18,7 @@ def main():
 
     api_service_name = "youtube"
     api_version = "v3"
-    DEVELOPER_KEY = "AIzaSyDTKyBWPeUkcddV47Y5Y0D-4KgvzVVcZGo"
+    DEVELOPER_KEY = apiKey
 
     youtube = googleapiclient.discovery.build(
         api_service_name, api_version, developerKey=DEVELOPER_KEY)
