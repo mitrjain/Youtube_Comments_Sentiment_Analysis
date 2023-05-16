@@ -32,7 +32,7 @@ Steps to run this application
 - Make sure you have the required python packages mentioned in above sections
 - Set up envornment varaibles file `.env` in the root (current) directory
 ```
-API_KEY=""
+API_KEY="YOUR_API_KEY_CREATED_FROM_GOOGLE_CONSOLE"
 ```
 - Phase 1: Execute the following command to get yotube comments, preprocess it and generate a dataset out of it: 
 
